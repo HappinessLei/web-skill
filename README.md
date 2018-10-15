@@ -1,2 +1,6 @@
 # web-skill
-前端知识库
+关于前端的技术文章，总结前端开发技巧，以及在实际开发中遇到的问题和解决方案。
+## 目录
+### 功能组件
+1. [图片序列帧](http://tgideas.github.io/motion/doc/data/component/mo.Film.html)（支持多图形式和雪碧图形式）
+2. [抽奖组件](http://tgideas.github.io/motion/doc/data/component/mo.Lottery.html)（包含圆形转盘抽奖和普通方形样式抽奖）
