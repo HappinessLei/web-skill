@@ -5,9 +5,9 @@ skrollr是一个原生的JavaScript视差滚动插件库，没有使用jQuery等
 ```html
 <div id="container">
     <div id="box" 
-         data-0="top:0px;left:0px" 
-         data-500="top:50px;left:200px"
-         data1000="top:100px;left:200px"
+         data-0="top:0px;left:0px;background-color:rgb(0,0,255)" 
+         data-500="top:50px;left:200px;background-color:rgb(0,255,255)"
+         data1000="top:100px;left:200px;background-color:rgb(0,0,255)"
          >
     </div>
 </div>
@@ -44,5 +44,13 @@ html,body{
 </body>
 ```
 ## 语法解析
-* <font color="#dd0000">`data-0`</font>：Skrollr使用data来定义影格，0代表SkrollrTop的值：画面中有两个影格分别是`data-0`与`data-500`，而里面的值，则分别用CSS来定义他的过渡效果  
-* 
+* `data-0`：Skrollr使用data来定义关键帧，0代表SkrollrTop的值：画面中有两个关键帧分别是`data-0`与`data-500`，而里面的值，则分别用CSS来定义它的过渡效果  
+### 注意
+* 默认情况下skrollr认为页面可以滚动到500px急即使你的页面长度不够500，如果想阻止这种情况发生只要使用forceHeight属性就可以默认是true，将其设为false就可以阻止。
+* 单位取值，skrollr规定所有单位数值，必须是相同的单位，即使0，也需要添加单位，并且px和%不能同时使用，动画不可能从5%到100px过渡。
+* 数值取值，当数值由多个数组成时，如`margin:0 0 0 0`，过渡值必须使用相同数量的值。如`margin:0px 0px 0px 0px`到`margin:0px 100px 50px 3px`是成立的，如果是`margin:10px`到`margin:5px 10px`或`margin:0px 5px`到`margin:5px 10px 15px 5px`这样是不起作用的。
+* 颜色取值，最好不要使用#00f或者#0000ff，必须使用`rgb()`，`rgba()`，`hsl()`和`hsla()`。（可以使用[skrollr-colors](https://github.com/FezVrasta/skrollr-colors)插件）
+* 颜色来做动画时一样，必须使用相同的颜色取值方法，比如`rgb()`到`rgb()`过渡，但不能`rgb()`到`hsl()`过渡。
+* CSS过渡动画时，转换的顺序也要必须一致，才能起作用。如`rotate(0deg) scale(1)`到`rotate(1000deg) scale(5)`这样。
+
+关于skrollr的更多api详情，请移步[官方文档](https://github.com/Prinzhorn/skrollr)
