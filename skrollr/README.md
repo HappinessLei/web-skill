@@ -1,4 +1,5 @@
 ## skrollr
+[https://github.com/Prinzhorn/skrollr/blob/master/src/skrollr.js](https://github.com/Prinzhorn/skrollr/blob/master/src/skrollr.js)  
 skrollr是一个原生的JavaScript视差滚动插件库，没有使用jQuery等第三方框架，能够兼容移动设备的Android + iOS系统和普通的PC浏览器，代码量极其少，压缩版本的插件只有12K，设计友好和方便，没有什么JavaScript高级的使用，只是简单的CSS和HTML。
 ## 使用方法
 ### html
@@ -37,7 +38,7 @@ html,body{
 ```
 ### js
 ```js
-<script type="text/javascript" src="skrollr.min.js" ></script> 
+<script type="text/javascript" src="skrollr.js" ></script> 
 <script type="text/javascript" > 
   var s = skrollr.init(); //初始化
 </script> 
