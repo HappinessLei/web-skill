@@ -3,8 +3,10 @@ skrollr是一个原生的JavaScript视差滚动插件库，没有使用jQuery等
 
 [https://github.com/Prinzhorn/skrollr/blob/master/src/skrollr.js](https://github.com/Prinzhorn/skrollr/blob/master/src/skrollr.js)
 ## Demo
-Demo(wap)
-
+Demo(wap)  
+  
+![demo](https://www.yidaiyilu.gov.cn//wcm.files/upload/CMSydylgw/201810/201810160659025.png)  
+-------
 [Demo](http://prinzhorn.github.io/skrollr/)(pc)
 ## 使用方法
 ### html
