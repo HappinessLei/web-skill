@@ -51,6 +51,7 @@ html,body{
 * 数值取值，当数值由多个数组成时，如`margin:0 0 0 0`，过渡值必须使用相同数量的值。如`margin:0px 0px 0px 0px`到`margin:0px 100px 50px 3px`是成立的，如果是`margin:10px`到`margin:5px 10px`或`margin:0px 5px`到`margin:5px 10px 15px 5px`这样是不起作用的。
 * 颜色取值，最好不要使用#00f或者#0000ff，必须使用`rgb()`，`rgba()`，`hsl()`和`hsla()`。（可以使用[skrollr-colors](https://github.com/FezVrasta/skrollr-colors)插件）
 * 颜色来做动画时一样，必须使用相同的颜色取值方法，比如`rgb()`到`rgb()`过渡，但不能`rgb()`到`hsl()`过渡。
-* CSS过渡动画时，转换的顺序也要必须一致，才能起作用。如`rotate(0deg) scale(1)`到`rotate(1000deg) scale(5)`这样。
-
+* CSS过渡动画时，转换的顺序也要必须一致，才能起作用，如`rotate(0deg) scale(1)`到`rotate(1000deg) scale(5)`转换。
+* 针对IE9以下的浏览器，可以引入`skrollr.ie.min.js`。
+  
 关于skrollr的更多api详情，请移步[官方文档](https://github.com/Prinzhorn/skrollr)
