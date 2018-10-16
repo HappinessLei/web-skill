@@ -37,9 +37,12 @@ html,body{
 ```
 ### js
 ```
-<script type= "text/javascript"  src= "skrollr.min.js" ></script> 
-<script type= "text/javascript" > 
-  var  s  =  skrollr . init (); //初始化
+<script type="text/javascript" src="skrollr.min.js" ></script> 
+<script type="text/javascript" > 
+  var s = skrollr.init(); //初始化
 </script> 
 </body>
 ```
+## 语法解析
+* <font color=#dd0000>data-0</font>：Skrollr使用data来定义影格，0代表SkrollrTop的值：画面中有两个影格分别是data-0与data-500，而里面的值，则分别用CSS来定义他的过渡效果  
+<font color=#0099ff size=12 face="黑体">黑体</font>
