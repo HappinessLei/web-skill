@@ -2,7 +2,7 @@
 skrollr是一个原生的JavaScript视差滚动插件库，没有使用jQuery等第三方框架，能够兼容移动设备的Android + iOS系统和普通的PC浏览器，代码量极其少，压缩版本的插件只有12K，设计友好和方便，没有什么JavaScript高级的使用，只是简单的CSS和HTML。
 ## 使用方法
 ### html
-```
+```html
 <div id="container">
     <div id="box" 
          data-0="top:0px;left:0px" 
@@ -13,7 +13,7 @@ skrollr是一个原生的JavaScript视差滚动插件库，没有使用jQuery等
 </div>
 ```
 ### css
-```
+```css
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ html,body{
 }
 ```
 ### js
-```
+```js
 <script type="text/javascript" src="skrollr.min.js" ></script> 
 <script type="text/javascript" > 
   var s = skrollr.init(); //初始化
@@ -44,5 +44,5 @@ html,body{
 </body>
 ```
 ## 语法解析
-* <font color=#dd0000>data-0</font>：Skrollr使用data来定义影格，0代表SkrollrTop的值：画面中有两个影格分别是data-0与data-500，而里面的值，则分别用CSS来定义他的过渡效果  
-<font color=#0099ff size=12 face="黑体">黑体</font>
+* <font color="#dd0000">`data-0`</font>：Skrollr使用data来定义影格，0代表SkrollrTop的值：画面中有两个影格分别是`data-0`与`data-500`，而里面的值，则分别用CSS来定义他的过渡效果  
+* 
