@@ -1,6 +1,6 @@
 ## 移动端常见问题解决
-- [解决安卓手机软键盘挡住input输入框的问题](https://github.com/HappinessLei/web-skill/edit/master/mobile#jump1)
-- [解决安卓手机软键盘弹出挤压背景页面导致变形问题](https://github.com/HappinessLei/web-skill/edit/master/mobile#jump2)
+- [解决安卓手机软键盘挡住input输入框的问题](#jump1)
+- [解决安卓手机软键盘弹出挤压背景页面导致变形问题](#jump2)
 ### <span id="jump1">解决安卓手机软键盘挡住input输入框的问题</span>
 ```js
 if (/Android/gi.test(navigator.userAgent)) {
