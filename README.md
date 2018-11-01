@@ -7,3 +7,5 @@
 3. [抽奖组件](http://tgideas.github.io/motion/doc/data/component/mo.Lottery.html)（包含圆形转盘抽奖和普通方形样式抽奖）
 4. [DOM视差组件](http://www.jq22.com/jquery-info178)（简单，轻量级的Parallax.js视差引擎，可以根据智能设备的方向作出反应，支持PC、移动端）
 5. [手势解锁插件H5lock.js](http://www.jq22.com/jquery-info12139)
+
+### 移动端常见问题总结
